@@ -1,0 +1,195 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  
+}
+
+.e-commerce , .game-zone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.project-image {
+  width: 600px;
+  padding: 5px;
+  background-color: rgba(124, 124, 124, 0.501);
+  border-radius : 30px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+}
+
+.project-preview:hover .project-image {
+  filter: brightness(30%);
+  transform: scale(1.1);
+  margin-right: 15px;
+}
+
+.project-preview:hover .show-hover {
+  opacity: 1;
+}
+
+
+
+
+
+.project-info {
+  width: 500px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.project-preview {
+  position: relative;
+}
+
+.show-hover {
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 230px;
+  opacity: 0;
+}
+
+.more-hover button {
+  cursor: pointer;
+  --green: #1BFD9C;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+.more-hover button:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.more-hover button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+.more-hover button:hover:before {
+  transform: translateX(15em);
+}
+
+.more-hover {
+  opacity: 1;
+  filter: brightness(50%);
+}
+
+.more-info {
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.project-info h2 {
+  background: -webkit-linear-gradient(94deg, transparent 0%, #89d6ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.show-hover button {
+  cursor: pointer;
+  --green: #1BFD9C;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+.show-hover button:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.show-hover button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+.show-hover button:hover:before {
+  transform: translateX(15em);
+}
+
+.go-to {
+  padding: 5px 10px;
+  background-color: beige;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.go-to:hover {
+  transform: scale(1.1);
+}
+
+.more-projects {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.linkedin-clone:hover .more-hover , .login-form:hover .more-hover , .profile-hover:hover .more-hover{
+  filter: brightness(100%);
+}
+
+
+
+.linkedin-clone, .login-form, .profile-hover {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.more-head {
+  background: -webkit-linear-gradient(94deg, transparent 0%, #89d6ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
